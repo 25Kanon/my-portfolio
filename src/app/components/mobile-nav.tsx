@@ -1,7 +1,8 @@
-import { Sheet, SheetContent, SheetTrigger } from "./sheet"
+import { Sheet, SheetContent, SheetTrigger, SheetClose } from "./sheet"
 import { Button } from "./button"
 import { Menu } from "lucide-react"
 import Link from "next/link"
+import {ColourfulText} from "./colorful-text";
 
 export function MobileNav() {
     return (
@@ -18,19 +19,26 @@ export function MobileNav() {
                         href="#about"
                         className="text-2xl font-medium transition-colors hover:text-primary"
                     >
-                        About
+                        <SheetClose>
+                            About
+                        </SheetClose>
                     </Link>
                     <Link
                         href="#projects"
                         className="text-2xl font-medium transition-colors hover:text-primary"
                     >
-                        Projects
+                        <SheetClose>
+                            Projects
+                        </SheetClose>
                     </Link>
                     <Link
-                        href="#contact"
+                        href="mailto:jprofeta000@gmail.com"
                         className="text-2xl font-medium transition-colors hover:text-primary"
                     >
-                        Contact
+                        <SheetClose>
+                            <ColourfulText text="Contact" />
+                        </SheetClose>
+
                     </Link>
                 </nav>
             </SheetContent>
