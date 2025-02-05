@@ -3,6 +3,8 @@
 import { ThemeToggle } from "./components/theme-toggle"
 import { MobileNav } from "./components/mobile-nav"
 import { FloatingDock } from "./components/floating-dock";
+import { InfiniteMovingCards } from './components/expertise';
+import { Vortex } from "./components/vortex";
 import { HeroHighlight, Highlight } from "./components/hero-highlight";
 import { motion } from "framer-motion";
 import Link from "next/link"
@@ -15,6 +17,7 @@ import {
 
 
 export default function Home() {
+
 
   const links = [
     {
@@ -40,13 +43,31 @@ export default function Home() {
       href: "#",
     },
   ];
+
+  const languages = [
+    { name: 'C', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/c/c-original.svg' },
+    { name: 'C++', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/cplusplus/cplusplus-original.svg' },
+    { name: 'C#', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/csharp/csharp-original.svg' },
+    { name: 'Python', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg' },
+    { name: 'Java', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg' },
+    { name: 'Kotlin', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/kotlin/kotlin-original.svg' },
+  ];
+
+  const frameworks = [
+    { name: 'Django', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/django/django-plain.svg' },
+    { name: 'Laravel', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/laravel/laravel-original.svg' },
+    { name: 'React', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg' },
+    { name: 'Next.js', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nextjs/nextjs-original.svg' },
+    { name: 'Express', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/express/express-original.svg' },
+  ];
   return (
       <div className="min-h-screen bg-background">
         {/* Navigation */}
-        <header className="sticky top-0 z-50 w-full border-b bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
+        <header
+            className="sticky top-0 z-50 w-full border-b bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
           <div className="container flex h-14 items-center">
             <div className="md:hidden">
-              <MobileNav />
+              <MobileNav/>
             </div>
 
             <nav className="hidden md:flex flex-1 items-center justify-end space-x-8">
@@ -77,7 +98,7 @@ export default function Home() {
             </div>
 
             <div className="flex flex-1 items-center justify-end">
-              <ThemeToggle />
+              <ThemeToggle/>
             </div>
           </div>
         </header>
@@ -89,7 +110,7 @@ export default function Home() {
 
               <h1 className="text-4xl md:text-6xl font-bold tracking-tight">
                 Hi I'm Jomari
-                <br />
+                <br/>
                 <span className="text-primary">
                   <Highlight>
                     Full Stack Developer
@@ -107,7 +128,8 @@ export default function Home() {
               </div>
             </div>
             <div className="relative aspect-square px-2">
-              <div className="absolute inset-0 bg-gradient-to-br from-primary/20 to-secondary/20 rounded-full animate-pulse" />
+              <div
+                  className="absolute inset-0 bg-gradient-to-br from-primary/20 to-secondary/20 rounded-full animate-pulse"/>
               <Image
                   src="/placeholder-avatar.jpg"
                   alt="Profile"
@@ -119,6 +141,35 @@ export default function Home() {
           </div>
 
         </section>
+
+        <div className="h-wrap w-full dark:bg-grid-small-white/[0.2] bg-grid-small-black/[0.2] relative flex items-center justify-center py-3">
+          <div
+              className="absolute pointer-events-none inset-0 flex items-center justify-center [mask-image:radial-gradient(ellipse_at_center,transparent_20%,black)]"></div>
+
+          <div className="container flex flex-col items-center justify-center">
+            <div className="flex flex-col items-center justify-center">
+              <h2 className="text-4xl md:text-6xl font-bold tracking-tight py-6">
+                Expertise
+              </h2>
+              <div className="flex flex-col w-full">
+                <div>
+                  <h3 className="text-center text-xl text-white/80 mb-4">Programming Languages</h3>
+                  <InfiniteMovingCards items={languages} speed="normal"/>
+                </div>
+
+                <div>
+                  <h3 className="text-center text-xl text-white/80 mb-4">Frameworks & Technologies</h3>
+                  <InfiniteMovingCards
+                      items={frameworks}
+                      direction="right"
+                      speed="normal"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
       </div>
   )
 }
