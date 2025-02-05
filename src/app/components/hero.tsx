@@ -7,7 +7,7 @@ export default function Hero() {
             <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
                 <div className="space-y-6">
                     <h1 className="text-4xl md:text-6xl font-bold tracking-tight">
-                        Hi, I'm Your Name
+                        Hi, I&apos;m Your Name
                         <br/>
                         <span className="text-primary">Full Stack Developer</span>
                     </h1>

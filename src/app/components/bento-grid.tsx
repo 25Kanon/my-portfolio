@@ -1,5 +1,6 @@
 import { cn } from "@/lib/utils";
 import React from "react";
+import Image from "next/image"
 
 export interface BentoGridItemProps {
     title: string;
@@ -27,7 +28,7 @@ export function BentoGridItem({
         >
             <div className="relative z-10 h-full w-full overflow-hidden rounded-xl">
                 <div className="relative h-48 w-full overflow-hidden rounded-xl">
-                    <img
+                    <Image
                         src={image}
                         alt={title}
                         className="h-full w-full object-cover object-center transition-transform duration-300 group-hover:scale-105"

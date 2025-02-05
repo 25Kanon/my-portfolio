@@ -1,12 +1,12 @@
 import React from 'react';
 import { cn } from "@/lib/utils";
-import { motion } from "framer-motion";
+import Image from "next/image"
 
 const ExpertiseCard = ({ name, icon }: { name: string; icon: string }) => {
     return (
         <div className="relative h-32 w-52 flex-shrink-0">
             <div className="h-full w-full bg-black/5 dark:bg-white/5 rounded-2xl border border-white/10 p-6 flex flex-col items-center justify-center">
-                <img src={icon} alt={name} className="w-12 h-12 mb-2" />
+                <Image src={icon} alt={name} className="w-12 h-12 mb-2" />
                 <p className="dark:text-white/80 text-black/80 font-medium">{name}</p>
             </div>
         </div>
@@ -52,6 +52,7 @@ export const InfiniteMovingCards = ({
                 ],
             };
 
+            // eslint-disable-next-line @typescript-eslint/no-unused-vars
             const scrollerAnimation = scrollerRef.current.animate(keyframes, {
                 duration: speedMap[speed] * 1000,
                 iterations: Infinity,

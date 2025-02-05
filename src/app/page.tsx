@@ -126,7 +126,7 @@ export default function Home() {
             <div className="space-y-6">
 
               <h1 className="text-4xl md:text-6xl font-bold tracking-tight">
-                Hi I'm Jomari
+                Hi I&apos;m Jomari
                 <br/>
                 <span className="text-primary">
                   <Highlight>
@@ -169,7 +169,7 @@ export default function Home() {
                 <div className="relative">
                   <div
                       className="absolute -inset-4 bg-gradient-to-r from-purple-600 to-pink-600 rounded-xl opacity-50 blur-lg"></div>
-                  <img
+                  <Image
                       src="https://avatar.iran.liara.run/public/23"
                       alt="Profile"
                       className="relative w-full h-[500px] object-cover rounded-xl"
@@ -185,9 +185,9 @@ export default function Home() {
 
                 <div className="space-y-4 dark:text-white/80 text-black/80">
                   <p>
-                    Hello! I'm Jomari M. Profeta, a 4th-year Bachelor of Science in Information Technology student at
+                    Hello! I&apos;m Jomari M. Profeta, a 4th-year Bachelor of Science in Information Technology student at
                     the
-                    Technological Institute of the Philippines, graduating in September 2025. I'm passionate about
+                    Technological Institute of the Philippines, graduating in September 2025. I&apos;m passionate about
                     building innovative software solutions and constantly learning new technologies to refine my skills.
                   </p>
 
@@ -209,7 +209,7 @@ export default function Home() {
                   </ul>
 
                   <p>
-                    Beyond coding, I enjoy sports and cooking. I'm driven by a mindset of continuous learning and
+                    Beyond coding, I enjoy sports and cooking. I&apos;m driven by a mindset of continuous learning and
                     aim to contribute to the tech community while pursuing meaningful projects that make a difference.
                   </p>
                 </div>
