@@ -232,7 +232,7 @@ export default function Home() {
           <div
               className="absolute pointer-events-none inset-0 flex items-center justify-center [mask-image:radial-gradient(ellipse_at_center,transparent_20%,black)]"></div>
 
-          <div className="container flex flex-col items-center justify-center">
+          <section className="container flex flex-col items-center justify-center overflow-hidden">
             <div className="flex flex-col items-center justify-center">
               <h2 className="text-4xl md:text-6xl font-bold tracking-tight py-6">
                 Expertise
@@ -253,7 +253,7 @@ export default function Home() {
                 </div>
               </div>
             </div>
-          </div>
+          </section>
 
         </div>
 
