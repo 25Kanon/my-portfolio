@@ -4,7 +4,12 @@ const nextConfig: NextConfig = {
   /* config options here */
 
     images: {
-        domains: ['ui.aceternity.com', 'assets.aceternity.com', 'avatar.iran.liara.run'],
+        remotePatterns: [
+            {
+                protocol: "https",
+                hostname: "**",
+            },
+        ],
     },
 };
 

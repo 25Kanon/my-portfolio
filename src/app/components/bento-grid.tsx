@@ -32,6 +32,8 @@ export function BentoGridItem({
                         src={image}
                         alt={title}
                         className="h-full w-full object-cover object-center transition-transform duration-300 group-hover:scale-105"
+                        fill
+
                     />
                 </div>
                 <div className="p-4">

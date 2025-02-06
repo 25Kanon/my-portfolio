@@ -16,6 +16,9 @@ import {
   IconAt,
 } from "@tabler/icons-react";
 
+import bannerImg from "./assets/banner.png"
+import aboutImg from "./assets/about.jpg"
+
 
 export default function Home() {
 
@@ -148,7 +151,7 @@ export default function Home() {
               <div
                   className="absolute inset-0 bg-gradient-to-br from-primary/20 to-secondary/20 rounded-full animate-pulse"/>
               <Image
-                  src="https://avatar.iran.liara.run/public/23"
+                  src={bannerImg}
                   alt="Profile"
                   fill
                   className="object-cover rounded-full p-4"
@@ -170,7 +173,7 @@ export default function Home() {
                   <div
                       className="absolute -inset-4 bg-gradient-to-r from-purple-600 to-pink-600 rounded-xl opacity-50 blur-lg"></div>
                   <Image
-                      src="https://avatar.iran.liara.run/public/23"
+                      src={aboutImg}
                       alt="Profile"
                       className="relative w-full h-[500px] object-cover rounded-xl"
                   />

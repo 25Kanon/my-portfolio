@@ -6,7 +6,7 @@ const ExpertiseCard = ({ name, icon }: { name: string; icon: string }) => {
     return (
         <div className="relative h-32 w-52 flex-shrink-0">
             <div className="h-full w-full bg-black/5 dark:bg-white/5 rounded-2xl border border-white/10 p-6 flex flex-col items-center justify-center">
-                <Image src={icon} alt={name} className="w-12 h-12 mb-2" />
+                <Image src={icon} alt={name} className="w-12 h-12 mb-2" width={12} height={12} />
                 <p className="dark:text-white/80 text-black/80 font-medium">{name}</p>
             </div>
         </div>
