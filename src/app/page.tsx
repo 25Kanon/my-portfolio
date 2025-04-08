@@ -133,7 +133,7 @@ export default function Home() {
                 <br/>
                 <span className="text-primary">
                   <Highlight>
-                    Full Stack Developer
+                    Software Engineer
                   </Highlight>
                 </span>
               </h1>
