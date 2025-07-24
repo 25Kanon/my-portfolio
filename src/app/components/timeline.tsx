@@ -1,10 +1,5 @@
 import React from "react";
 
-type DownloadLink = {
-  href: string;
-  label?: string;
-};
-
 export type TimelineItemProps = {
   title: string;
   date: string;
