@@ -16,7 +16,7 @@ import {
   IconAt,
 } from "@tabler/icons-react";
 
-import bannerImg from "./assets/banner.png"
+import bannerImg from "./assets/banner.jpg"
 import aboutImg from "./assets/about.jpg"
 
 
@@ -188,10 +188,9 @@ export default function Home() {
 
                 <div className="space-y-4 dark:text-white/80 text-black/80">
                   <p>
-                    Hello! I&apos;m Jomari M. Profeta, a 4th-year Bachelor of Science in Information Technology student at
-                    the
-                    Technological Institute of the Philippines, graduating in September 2025. I&apos;m passionate about
-                    building innovative software solutions and constantly learning new technologies to refine my skills.
+                  Hi, I&#39;m Jomari M. Profeta, a Bachelor of Science in Information Technology 
+                  graduate from the Technological Institute of the Philippines. I specialize in 
+                  developing software solutions and continuously improve my skills by exploring new technologies.
                   </p>
 
                   <p>
